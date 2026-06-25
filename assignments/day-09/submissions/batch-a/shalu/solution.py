@@ -28,8 +28,8 @@ print(f"Rows: {rows}\nColumns: {columns}")
 
 # Create a `revenue` column using `price * quantity`. Print only the `product` and `revenue` columns.
 
-df["Revenue"]=df["price"]*df["quantity"]
-print(df[["product","Revenue"]])
+df["revenue"]=df["price"]*df["quantity"]
+print(df[["product","revenue"]])
 
 ### Question 4: Total Revenue
 
@@ -37,14 +37,14 @@ print(df[["product","Revenue"]])
 
 # Expected Output:
 # Total revenue: 10690
-total_revenue=df["Revenue"].sum()
+total_revenue=df["revenue"].sum()
 print("Total revenue:",total_revenue)
 
 ### Question 5: Filter Gorakhpur Sales
 
 # Create a new DataFrame containing rows where the city is `Gorakhpur`. Print its `product`, `quantity`, and `revenue` columns.
 df_gkp=df[df["city"]=="Gorakhpur"]
-print(df_gkp[["product","quantity","Revenue"]])
+print(df_gkp[["product","quantity","revenue"]])
 
 ### Question 6: Revenue by Category
 
@@ -53,7 +53,7 @@ print(df_gkp[["product","quantity","Revenue"]])
 # Expected Values:
 # Online Course: 7494
 # Workshop: 3196
-Revenue_Category=df.groupby("category")["Revenue"].sum()
+Revenue_Category=df.groupby("category")["revenue"].sum()
 for category, revenue in Revenue_Category.items():
     print(f"{category}: {revenue}")
 
@@ -65,7 +65,7 @@ for category, revenue in Revenue_Category.items():
 # Deoria: 999
 # Gorakhpur: 7393
 # Lucknow: 2298
-revenue_city=df.groupby("city")["Revenue"].sum()
+revenue_city=df.groupby("city")["revenue"].sum()
 for city, revenue in revenue_city.items():
     print(f"{city}: {revenue}")
 
@@ -75,6 +75,6 @@ for city, revenue in revenue_city.items():
 
 # Expected Output:
 # Top product: Data Analytics Course
-Product=df.groupby("product")["Revenue"].sum()
+Product=df.groupby("product")["revenue"].sum()
 Product=Product.sort_values(ascending=False).index[0]
 print("Top product:",Product)

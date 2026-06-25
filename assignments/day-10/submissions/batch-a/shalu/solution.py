@@ -110,7 +110,7 @@ plt.xlabel("Course")
 plt.ylabel("Students")
 plt.xticks(rotation=20)   # Rotate labels by 20 degrees
 plt.tight_layout()        # Adjust spacing before saving
-plt.savefig("course_bar_chart.png")
+plt.savefig("students_by_course_bar_readable.png")
 plt.show()
 
 ### Question 8: Reflection Comment

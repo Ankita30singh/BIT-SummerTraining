@@ -66,14 +66,14 @@ try:
 except FileNotFoundError:
     print("file not found") 
 try:
-    highest_revenue=0
-    product=""
+    product_revenue = {}
     with open(file_path,"r") as file:
         data= csv.DictReader(file)
         for item in data:
-            if int(item["price"])*int(item["quantity"])>highest_revenue:
-                highest_revenue= int(item["price"])*int(item["quantity"])
-                product=item["product"]
+            product_name = item["product"]
+            revenue = int(item["price"])*int(item["quantity"])
+            product_revenue[product_name] = product_revenue.get(product_name, 0) + revenue
+    product = max(product_revenue, key=product_revenue.get)
     print("Top product:",product)
 except FileNotFoundError:
     print("file not found")
