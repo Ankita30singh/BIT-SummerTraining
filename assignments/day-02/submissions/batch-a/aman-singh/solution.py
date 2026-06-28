@@ -1,43 +1,48 @@
-#Question 1
+# Question 1: Positive, Negative, or Zero
+num = int(input("Enter a number: "))
 
-a = int(input("Enter the number: "))
-if a>0:
-    print("The number is positive.")
-elif a<0:
-    print("The number is negative.")
-else:    
-    print("The number is zero.")
-
-#Question 2
-a = int(input("Enter the number: "))
-if a%2==0:
-    print("The number is even.")
+if num > 0:
+    print("Positive number")
+elif num < 0:
+    print("Negative number")
 else:
-    print("The number is odd.")
+    print("Zero")
 
-#Question 3
+
+# Question 2: Even or Odd
+num2 = int(input("Enter another number: "))
+
+if num2 % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+
+# Question 3: List of 10 numbers
 numbers = [1,2,3,4,5,6,7,8,9,10]
-for num in numbers:
-    print(num)
 
-#Question 4
+print("Numbers in the list:")
+for n in numbers:
+    print(n)
 
-def calculate_average(num1, num2, num3):
-    average = (num1 + num2 + num3) / 3
-    return average
-print(calculate_average(10, 20, 30))
 
-#Question 5
+# Question 4: Function to calculate average
+def calculate_average(m1, m2, m3):
+    return (m1 + m2 + m3) / 3
 
+avg = calculate_average(80, 90, 100)
+print("Average:", avg)
+
+
+# Question 5: Grade student
 def grade_student(marks):
     if marks >= 90:
-        print("A")
-    elif marks >= 80:
-        print("B")
-    elif marks >= 70:
-        print("C")
-    elif marks >= 60:
-        print("D")  
+        print("Grade: A")
+    elif marks >= 75:
+        print("Grade: B")
+    elif marks >= 50:
+        print("Grade: C")
     else:
-        print("F")
+        print("Fail")
+
 grade_student(85)
