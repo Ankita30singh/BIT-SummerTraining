@@ -63,6 +63,30 @@ assignments/
     submissions/
       batch-a/
       batch-b/
+  day-12/
+    questions.md
+    submissions/
+      batch-a/
+      batch-b/
+  day-13/
+    questions.md
+    submissions/
+      batch-a/
+      batch-b/
+  day-14/
+    questions.md
+    submissions/
+      batch-a/
+      batch-b/
+  day-15/ ... day-26/
+    questions.md
+    submissions/
+      batch-a/
+      batch-b/
+Artifical_intelligence/
+  README.md
+  Batch-A/
+  Batch-B/
 resources/
   setup-guide.md
   python-basics.md
@@ -124,6 +148,28 @@ git push origin day-01-your-name
 
 Then open GitHub and create a Pull Request.
 
+## Having Git Problems?
+
+Start by running:
+
+```bash
+git status
+```
+
+It tells you your current branch, changed files, staged files, and untracked files.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md#troubleshooting-git-problems) for step-by-step help when:
+
+- you are on the wrong branch;
+- your push is rejected;
+- old or unrelated files appear in your Pull Request;
+- Git reports `nothing to commit`;
+- your changes do not appear on GitHub;
+- you have a merge conflict;
+- you are unsure about `origin` and `upstream`.
+
+When asking for help, share the exact command and complete error message. Never share a password, access token, private key, or other secret.
+
 ## Topics Covered
 
 - Python programming
@@ -131,6 +177,10 @@ Then open GitHub and create a Pull Request.
 - Data analytics with Python collections and CSV files
 - NumPy, Pandas, Matplotlib, and Seaborn
 - Data science
-- Machine learning
+- Machine-learning fundamentals and problem types
+- Linear regression and logistic regression
+- Train/test splitting, MAE, and R²
+- Unsupervised learning and K-means fundamentals
 - Artificial intelligence
+- AI class notes, notebooks, embeddings, transformers, RAG, agents, responsible AI, and capstone research assignments
 - Git and GitHub collaboration

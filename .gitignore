@@ -6,5 +6,4 @@ venv/
 .env
 .idea/
 .vscode/
-Python_Class*
-python_project_mangaScanner*Python_Class*
+docs*

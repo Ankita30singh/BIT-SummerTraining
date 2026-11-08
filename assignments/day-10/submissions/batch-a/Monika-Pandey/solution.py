@@ -22,7 +22,7 @@ plt.ylabel("Sales",fontsize=12)
 plt.title("Monthly Sales", fontsize=16,style="italic")
 plt.savefig("monthly_sales_line.png")
 plt.grid()
-plt.show()
+plt.close()
 
 ### Question 2: Bar Chart
 
@@ -37,7 +37,7 @@ plt.xlabel("Course")
 plt.ylabel("Students")
 plt.title("Students by Course")
 plt.savefig("students_by_course_bar.png")
-plt.show()
+plt.close()
 
 ### Question 3: Pie Chart
 
@@ -49,7 +49,7 @@ plt.show()
 plt.pie(students,labels=courses,autopct="%1.1f%%")
 plt.title("Course Enrollment Share")
 plt.savefig("course_enrollment_pie.png")
-plt.show()
+plt.close()
 
 ### Question 4: Scatter Plot
 
@@ -68,7 +68,7 @@ plt.xlabel("Study Hours")
 plt.ylabel("Marks")
 plt.savefig("study_hours_scatter.png")
 plt.grid()
-plt.show()
+plt.close()
 
 ### Question 5: Add Grid and Legend
 
@@ -80,7 +80,7 @@ plt.title("Monthly Sales", fontsize=16,style="italic")
 plt.savefig("monthly_sales_line.png")
 plt.grid()
 plt.legend()
-plt.show()
+plt.close()
 
 ### Question 6: Compare Two Lines
 
@@ -98,7 +98,7 @@ plt.ylabel("Number of Students")
 plt.legend()
 plt.grid(True)
 plt.savefig("course_growth.png")
-plt.show()
+plt.close()
 
 
 ### Question 7: Chart Readability
@@ -111,7 +111,7 @@ plt.ylabel("Students")
 plt.xticks(rotation=20)   # Rotate labels by 20 degrees
 plt.tight_layout()        # Adjust spacing before saving
 plt.savefig("students_by_course_bar_readable.png")
-plt.show()
+plt.close()
 
 ### Question 8: Reflection Comment
 

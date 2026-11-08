@@ -26,7 +26,7 @@ sns.set_theme(style="whitegrid")
 sns.countplot(data=df, x="course")
 plt.title("Students by Course")
 plt.savefig("course_count.png")
-plt.show()
+plt.close()
 plt.close()
 
 ### Question 3: Bar Plot
@@ -38,7 +38,7 @@ plt.close()
 sns.barplot(data=df, x="course", y="marks")
 plt.title("Average Marks by Course")
 plt.savefig("average_marks_bar.png")
-plt.show()
+plt.close()
 plt.close()
 
 ### Question 4: Scatter Plot
@@ -50,7 +50,7 @@ plt.close()
 sns.scatterplot(data=df,x="study_hours",y="marks",hue="course")
 plt.title("Study Hours vs Marks")
 plt.savefig("study_hours_marks_scatter.png")
-plt.show()
+plt.close()
 plt.close()
 
 ### Question 5: Box Plot
@@ -62,7 +62,7 @@ plt.close()
 sns.boxplot(data=df,x="course",y="marks")
 plt.title("Marks Distribution by Course")
 plt.savefig("marks_boxplot.png")
-plt.show()
+plt.close()
 plt.close()
 
 ### Question 6: Histogram
@@ -74,7 +74,7 @@ plt.close()
 sns.histplot(data=df,x="marks",kde=True)
 plt.title("Marks Distribution")
 plt.savefig("marks_histogram.png")
-plt.show()
+plt.close()
 plt.close()
 
 ### Question 7: Correlation Heatmap
@@ -89,7 +89,7 @@ correlation = df[["study_hours", "marks", "attendance"]].corr()
 sns.heatmap(correlation, annot=True)
 plt.title("Student Metrics Correlation")
 plt.savefig("student_correlation_heatmap.png")
-plt.show()
+plt.close()
 plt.close()
 
 ### Question 8: Best Performing Course
