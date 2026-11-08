@@ -61,7 +61,7 @@ for k in range(1, 8):
 
     inertias.append(model.inertia_)
 # Print each `k` and inertia value rounded to two decimal places.
-print(f"k = {k}, Inertia = {model.inertia_:.2f}")
+    print(f"k = {k}, Inertia = {model.inertia_:.2f}")
 # Plot the inertia values against `k` using markers, axis labels, a title, and a grid. Save the chart as:
 
 plt.figure(figsize=(7,5))
