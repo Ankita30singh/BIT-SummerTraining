@@ -69,7 +69,7 @@ plt.ylabel("Inertia")
 plt.grid(True)
 plt.tight_layout()
 plt.savefig("elbow_curve.png")
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -134,7 +134,7 @@ plt.legend()
 
 plt.tight_layout()
 plt.savefig("customer_clusters.png")
-plt.show()
+plt.close()
 plt.close()
 
 
