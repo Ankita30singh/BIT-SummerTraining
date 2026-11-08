@@ -21,7 +21,7 @@ plt.title("Monthly Sales")
 plt.xlabel("Month")
 plt.ylabel("Sales")
 plt.savefig("monthly_sales_line.png")
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -41,7 +41,7 @@ plt.title("Students by Course")
 plt.xlabel("Course")
 plt.ylabel("Students")
 plt.savefig("students_by_course_bar.png")
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -61,7 +61,7 @@ plt.pie(
 )
 plt.title("Course Enrollment Share")
 plt.savefig("course_enrollment_pie.png")
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -83,7 +83,7 @@ plt.title("Study Hours and Marks")
 plt.xlabel("Study Hours")
 plt.ylabel("Marks")
 plt.savefig("study_hours_scatter.png")
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -98,7 +98,7 @@ plt.xlabel("Month")
 plt.ylabel("Sales")
 plt.grid()
 plt.legend()
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -118,7 +118,7 @@ plt.xlabel("Month")
 plt.ylabel("Students")
 plt.legend()
 plt.savefig("course_growth.png")
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -133,7 +133,7 @@ plt.ylabel("Students")
 plt.xticks(rotation=20)
 plt.tight_layout()
 plt.savefig("students_by_course_bar_readable.png")
-plt.show()
+plt.close()
 plt.close()
 
 
