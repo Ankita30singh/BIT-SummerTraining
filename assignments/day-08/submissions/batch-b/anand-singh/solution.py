@@ -43,7 +43,7 @@ print(multiple)
 
 # Question 7: Filter Values
 # Using the marks array, create and print a new array containing marks greater than or equal to 90.
-marks = np.array([34,88,69,92,56,90])
+marks = np.array([85, 90, 78, 92, 88])
 filtered_marks = marks[marks >= 90]
 print("Marks >= 90:", filtered_marks)
 
