@@ -14,7 +14,7 @@ plt.ylabel("Sales")
 
 plt.savefig("monthly_sales_line.png")
 
-plt.show()
+plt.close()
 plt.close()
 
 ### Question 2: Bar Chart
@@ -25,14 +25,14 @@ plt.title("Students by Course")
 plt.xlabel("Course")
 plt.ylabel("Students")
 plt.savefig("students_by_course_bar.png")
-plt.show()
+plt.close()
 
 ### Question 3: Pie Chart
 
 plt.pie(students, labels=courses, autopct="%1.1f%%")
 plt.title("Course Enrollment Share")
 plt.savefig("course_enrollment_pie.png")
-plt.show()
+plt.close()
 
 ### Question 4: Scatter Plot
 study_hours = [1, 2, 3, 4, 5, 6]
@@ -42,7 +42,7 @@ plt.title("Study Hours and Marks")
 plt.xlabel("Study Hours")
 plt.ylabel("Marks")
 plt.savefig("study_hours_scatter.png")
-plt.show()
+plt.close()
 
 ### Question 5: Add Grid and Legend
 
@@ -50,7 +50,7 @@ plt.plot(months, monthly_sales, label="Sales")
 plt.grid()
 plt.legend()
 plt.savefig("sales_grid_legend.png")
-plt.show()
+plt.close()
 
 ### Question 6: Compare Two Lines
 python_students = [20, 25, 30, 28, 35, 40]
@@ -59,7 +59,7 @@ plt.plot(months, python_students, label="Python")
 plt.plot(months, ai_students, label="AI")
 plt.legend()
 plt.savefig("course_growth.png")
-plt.show()
+plt.close()
 
 ### Question 7: Chart Readability
 plt.bar(courses, students)
@@ -70,7 +70,7 @@ plt.ylabel("Students")
 plt.xticks(rotation=20)   # labels ko 20 degree rotate karega
 plt.tight_layout()        # chart ko properly fit karega
 
-plt.show()
+plt.close()
 plt.close()
 
 ### Question 8: Reflection Comment
