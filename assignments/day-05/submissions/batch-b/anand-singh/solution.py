@@ -40,11 +40,11 @@ with open("students.txt", "r") as f:
 # Question 6: Search a Name in File  
 with open("students.txt", "r") as f:
     names = f.readlines()
-    search_name = "Priya"
+    search_name = input("Enter a student name: ").strip()
     if search_name +"\n" in names:
-        print(f"{search_name} found.")
+        print("Found")
     else:
-        print(f"{search_name} not found.")
+        print("Not Found")
 
 # Question 7: Copy File Content
 with open("students.txt", "r") as source_file:
