@@ -31,7 +31,7 @@ plt.figure(figsize=(6,4))
 sns.countplot(x="course", data=df, palette="Set2")
 plt.title("Students by Course")
 plt.savefig("course_count.png")
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -44,7 +44,7 @@ plt.figure(figsize=(6,4))
 sns.barplot(x="course", y="marks", data=df, estimator="mean", palette="Set2")
 plt.title("Average Marks by Course")
 plt.savefig("average_marks_bar.png")
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -59,7 +59,7 @@ plt.title("Study Hours vs Marks")
 plt.xlabel("Study Hours")
 plt.ylabel("Marks")
 plt.savefig("study_hours_marks_scatter.png")
-plt.show()
+plt.close()
 plt.close()
 
 # Question 5: Box Plot
@@ -73,7 +73,7 @@ plt.title("Marks Distribution by Course")
 plt.xlabel("Course")
 plt.ylabel("Marks")
 plt.savefig("marks_boxplot.png")
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -88,7 +88,7 @@ plt.title("Marks Distribution")
 plt.xlabel("Marks")
 plt.ylabel("Count")
 plt.savefig("marks_histogram.png")
-plt.show()
+plt.close()
 plt.close()
 
 
@@ -104,7 +104,7 @@ plt.figure(figsize=(6,4))
 sns.heatmap(correlation, annot=True, cmap="Blues", fmt=".2f")
 plt.title("Student Metrics Correlation")
 plt.savefig("student_correlation_heatmap.png")
-plt.show()
+plt.close()
 plt.close()
 
 
