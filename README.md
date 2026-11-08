@@ -78,6 +78,15 @@ assignments/
     submissions/
       batch-a/
       batch-b/
+  day-15/ ... day-26/
+    questions.md
+    submissions/
+      batch-a/
+      batch-b/
+Artifical_intelligence/
+  README.md
+  Batch-A/
+  Batch-B/
 resources/
   setup-guide.md
   python-basics.md
@@ -173,4 +182,5 @@ When asking for help, share the exact command and complete error message. Never 
 - Train/test splitting, MAE, and R²
 - Unsupervised learning and K-means fundamentals
 - Artificial intelligence
+- AI class notes, notebooks, embeddings, transformers, RAG, agents, responsible AI, and capstone research assignments
 - Git and GitHub collaboration
